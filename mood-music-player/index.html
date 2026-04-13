@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎧 Mood Music Player</h1>
+
+        <!-- Mood Buttons -->
+        <div class="mood-buttons">
+            <button onclick="selectMood('happy')">😄 Happy</button>
+            <button onclick="selectMood('sad')">😢 Sad</button>
+            <button onclick="selectMood('angry')">😡 Angry</button>
+        </div>
+
+        <!-- Song List -->
+        <div id="songList">
+            <p>Select a mood to see songs 🎶</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

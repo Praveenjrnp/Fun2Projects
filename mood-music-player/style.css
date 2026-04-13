@@ -1,0 +1,144 @@
+/* 🌍 Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    text-align: center;
+}
+
+/* 📦 Main Container */
+.container {
+    margin: 40px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* 🎧 Title */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* 🎭 Mood Buttons */
+.mood-buttons button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: white;
+    transition: 0.3s;
+}
+
+.mood-buttons button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 12px #ff6a00;
+}
+
+/* 🎵 Song Card */
+.song-card {
+    background: rgba(255,255,255,0.08);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.song-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background: rgba(255,255,255,0.15);
+}
+
+/* ▶ Buttons */
+.song-card button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #1db954;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.song-card button:hover {
+    background: #17a74a;
+}
+
+/* ❤️ Favorite button color */
+.song-card button:last-child {
+    background: #888c89;
+}
+
+.song-card button:last-child:hover {
+    background: #ff4b2b;
+}
+
+/* 🎧 Now Playing */
+#nowPlaying {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 📊 Progress Bar */
+#progressBar {
+    width: 80%;
+    margin-top: 15px;
+    appearance: none;
+    height: 6px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+}
+
+/* 🎯 Progress Thumb */
+#progressBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #1db954;
+    cursor: pointer;
+}
+
+/* ⏱ Time */
+#timeDisplay {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* ⏭ Controls */
+button[onclick="pauseSong()"],
+button[onclick="nextSong()"] {
+    margin: 10px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+button[onclick="pauseSong()"] {
+    background: #b21d40;
+}
+
+button[onclick="nextSong()"] {
+    background: #1db954;
+}
+
+button[onclick="pauseSong()"]:hover {
+    background: #ff4b2b;
+}
+
+button[onclick="nextSong()"]:hover {
+    background: #17a74a;
+}
